@@ -7,7 +7,7 @@ patch:
   #menu/page_size: 5 ## 自定义候选项个数
   key_binder/bindings/+:
     #- { when: composing, accept: Tab, send: '[' } ## tab引导辅助码
-    #- { when: composing, accept: comma, send: '[' } ## 逗号引导辅助码，常用于手机端
+    - { when: composing, accept: comma, send: '[' } ## 逗号引导辅助码，常用于手机端
     #- { when: has_menu, accept: apostrophe, send: 3 } ## 单引号用于第3候选
     - { when: composing, accept: grave, send_sequence: '{Right}{Right}{Shift+Left}{Right}{Right}[' }
       ## `键（grave，Tab 上面那个）为词组逐字追加辅助码。
@@ -17,7 +17,7 @@ patch:
   ##  如果希望无论有无 [ 均可引导，取消注释的同时将 xform 改成 derive
   #speller/algebra/@next: xform/[[]//
 
-  #translator/dictionary: flypy_flypy ## 使用小鹤原版辅助码
+  translator/dictionary: flypy_flypy ## 使用小鹤原版辅助码
   #translator/spelling_hints: 0 ## 关闭单字编码提示
   translator/comment_format:
     #- xform/^[^[]+[[]// ## 单字编码提示只显示辅助码部分
