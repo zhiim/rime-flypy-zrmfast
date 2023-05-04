@@ -12,5 +12,14 @@ patch:
     - schema: luna_pinyin          # 朙月拼音
     - schema: emoji         # emoji表情
     # - schema: stroke
-    - schema: chaizi
+    - schema: chaiz
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Caps_Lock: clear
+      Control_L: inline_ascii
+      Control_R: inline_ascii
+      Eisu_toggle: clear
+      Shift_L: noop
+      Shift_R: noop
 
