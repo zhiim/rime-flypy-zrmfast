@@ -22,9 +22,10 @@ patch:
       Eisu_toggle: clear
       Shift_L: noop
       Shift_R: noop
-  # 在按下esc键时切换为英文输入法（vim mode）
   "key_binder/bindings":
+    # 在按下esc键时切换为英文输入法（vim mode）
     - { when: always, accept: Release+Escape, toggle: ascii_mode}
+    # 使用,和.翻页
     - { when: paging, accept: comma, send: Page_Up}
     - { when: has_menu, accept: period, send: Page_Down}
 
