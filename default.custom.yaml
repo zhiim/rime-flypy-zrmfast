@@ -17,8 +17,8 @@ patch:
     good_old_caps_lock: true
     switch_key:
       Caps_Lock: clear
-      Control_L: inline_ascii
-      Control_R: inline_ascii
+      Control_L: inline_ascii  # 切换成英文
+      Control_R: inline_ascii  # 切换成英文
       Eisu_toggle: clear
       Shift_L: noop
       Shift_R: noop
